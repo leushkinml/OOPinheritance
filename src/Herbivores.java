@@ -8,7 +8,7 @@ public class Herbivores extends Mammals{
     public Herbivores(String name, String nikName, int age, String habitat, int movingSpeed, String typeOfFood) {
         super(name, nikName, age, habitat, movingSpeed);
 
-        if (typeOfFood == null || typeOfFood.isEmpty() || typeOfFood.isBlank()) {
+        if (typeOfFood == null || typeOfFood.isBlank()) {
             this.typeOfFood = "Тип пищи не задан.";
         } else {
             this.typeOfFood = typeOfFood;
@@ -32,7 +32,7 @@ public class Herbivores extends Mammals{
     }
 
     public void setTypeOfFood(String typeOfFood) {
-        if (typeOfFood == null || typeOfFood.isEmpty() || typeOfFood.isBlank()) {
+        if (typeOfFood == null || typeOfFood.isBlank()) {
             this.typeOfFood = "Тип пищи не задан.";
         } else {
             this.typeOfFood = typeOfFood;

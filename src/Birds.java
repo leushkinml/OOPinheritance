@@ -7,7 +7,7 @@ public class Birds extends Animals{
 
     public Birds(String name, String nikName, int age, String habitat) {
         super(name, nikName, age);
-        if (habitat == null || habitat.isEmpty() || habitat.isBlank()) {
+        if (habitat == null || habitat.isBlank()) {
             this.habitat = "Среда обитания не задана.";
         } else {
             this.habitat = habitat;
@@ -29,7 +29,7 @@ public class Birds extends Animals{
     }
 
     public void setHabitat(String habitat) {
-        if (habitat == null || habitat.isEmpty() || habitat.isBlank()) {
+        if (habitat == null || habitat.isBlank()) {
             this.habitat = "Среда обитания не задана.";
         } else {
             this.habitat = habitat;

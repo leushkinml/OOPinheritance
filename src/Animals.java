@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Animals {
-
+// Должен быть абстрактным
     private final String name;
     private final String nikName;
     private int age;
@@ -11,7 +11,7 @@ public class Animals {
         this.nikName = nikName;
         this.age = age;
     }
-
+// Должен быть абстрактным
     public void eat() {
     }
     public void go() {

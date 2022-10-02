@@ -8,7 +8,7 @@ public class Flying extends Birds{
                       String habitat, String movementType) {
         super(name, nikName, age, habitat);
 
-        if (movementType == null || movementType.isEmpty() || movementType.isBlank()) {
+        if (movementType == null || movementType.isBlank()) {
             this.movementType = "Тип передвижения не задан.";
         } else {
             this.movementType = movementType;
@@ -32,7 +32,7 @@ public class Flying extends Birds{
     }
 
     public void setMovementType(String movementType) {
-        if (movementType == null || movementType.isEmpty() || movementType.isBlank()) {
+        if (movementType == null || movementType.isBlank()) {
             this.movementType = "Тип передвижения не задан.";
         } else {
             this.movementType = movementType;
