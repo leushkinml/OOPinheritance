@@ -7,12 +7,12 @@ public class Amphibians extends Animals {
 
     public Amphibians(String name, String nikName, int age, String habitat) {
         super(name, nikName, age);
-        if (habitat == null || habitat.isBlank()) {
-            this.habitat = "Среда обитания не задана.";
-        } else {
-            this.habitat = habitat;
-        }
-//        this.habitat = setHabitat();
+//        if (habitat == null || habitat.isBlank()) {
+//            this.habitat = "Среда обитания не задана.";
+//        } else {
+//            this.habitat = habitat;
+//        }
+        this.setHabitat(habitat);
     }
 
     public void eat() {

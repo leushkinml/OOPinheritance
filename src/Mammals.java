@@ -7,17 +7,8 @@ public class Mammals extends Animals{
 
     public Mammals(String name, String nikName, int age, String habitat, int movingSpeed) {
         super(name, nikName, age);
-        if (habitat == null || habitat.isBlank()) {
-            this.habitat = "Среда обитания не задана.";
-        } else {
-            this.habitat = habitat;
-        }
-
-        if (movingSpeed < 0) {
-            this.movingSpeed = 0;
-        } else {
-            this.movingSpeed = movingSpeed;
-        }
+        this.setHabitat(habitat);
+        this.setMovingSpeed(movingSpeed);
     }
 
     public void eat() {

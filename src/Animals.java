@@ -9,11 +9,12 @@ public class Animals {
     public Animals(String name, String nikName, int age) {
         this.name = name;
         this.nikName = nikName;
-        this.age = age;
+        this.setAge(age);
     }
 // Должен быть абстрактным
     public void eat() {
     }
+// Должен быть абстрактным
     public void go() {
     }
     public void sleep() {

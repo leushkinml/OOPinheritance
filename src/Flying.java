@@ -7,12 +7,7 @@ public class Flying extends Birds{
     public Flying(String name, String nikName, int age,
                       String habitat, String movementType) {
         super(name, nikName, age, habitat);
-
-        if (movementType == null || movementType.isBlank()) {
-            this.movementType = "Тип передвижения не задан.";
-        } else {
-            this.movementType = movementType;
-        }
+        this.setMovementType(movementType);
     }
 
 
