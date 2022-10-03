@@ -1,7 +1,6 @@
 import java.util.Objects;
 
-public class Animals {
-// Должен быть абстрактным
+public abstract class Animals {
     private final String name;
     private final String nikName;
     private int age;
@@ -11,12 +10,8 @@ public class Animals {
         this.nikName = nikName;
         this.setAge(age);
     }
-// Должен быть абстрактным
-    public void eat() {
-    }
-// Должен быть абстрактным
-    public void go() {
-    }
+    public abstract void eat();
+    public abstract void go();
     public void sleep() {
         System.out.println("Как правило, мы спим по ночам.");
     }
